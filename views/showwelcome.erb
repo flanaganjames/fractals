@@ -1,0 +1,29 @@
+<%
+
+aForm = <<-eos
+<html>
+<head>
+<title>Showing Fractal</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){  $("#bob").click(function(){    $("#sam").hide();  });
+  $("#tom").click(function(){    $("#sam").fadeIn(10000);  });
+  $("#harry").click(function(){    $("#sam").attr("src", "feigenbaum.gif");  });});
+</script>
+</head>
+
+<body>
+<div> Fractal ....</div>
+<button id="bob">Hide!</button>
+<button id="tom">Show!</button>
+<button id="harry">Reset!</button>
+<img id="sam" src="feigenbaum.gif"> </img>
+</body>
+</html>
+eos
+
+return aForm
+%>
+

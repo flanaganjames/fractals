@@ -1,0 +1,47 @@
+<%
+
+aForm = <<-eos
+<html>
+<head>
+<title>Showing Fractal</title>
+<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\" />
+<script src="jquery-1.10.2.min.js"> </script>
+<script>
+var $j = jQuery.noConflict();
+$j(function () {
+  var img = new Image();
+  $j(img)
+   .load(function () { 
+     $j(this).hide();
+     $j('#loader') 
+      .removeClass('loading')
+      .append(this);
+
+  $j(this).fadeIn();
+   })
+ .error(function () {
+   })
+ .attr('src', 'feigenbaum.gif');
+});
+
+</script>
+</head>
+
+<body>
+<div id="loader" class="loading img-center"></div>
+
+<a id="refresh" href="#"> Replay Animation </a>
+<img id="image" src="feigenbaum.gif">
+<script>
+$j("#refresh").click(function() {
+  $j("#loader").find('img').attr("src", "feigenbaum2.gif");
+});
+</script>
+</body>
+</html>
+
+eos
+
+return aForm
+%>
+

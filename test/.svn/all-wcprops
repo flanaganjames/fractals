@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/fractals/!svn/ver/39/trunk/test
+END
+julia_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/fractals/!svn/ver/39/trunk/test/julia_test.rb
+END
+renderer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/fractals/!svn/ver/28/trunk/test/renderer_test.rb
+END
+burning_ship_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/fractals/!svn/ver/39/trunk/test/burning_ship_test.rb
+END
+mandelbrot_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/fractals/!svn/ver/39/trunk/test/mandelbrot_test.rb
+END
+newton_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/fractals/!svn/ver/39/trunk/test/newton_test.rb
+END

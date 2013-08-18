@@ -1,0 +1,13 @@
+
+#loader {
+ width: 600px;
+ height: 450px;
+ margin: auto; 
+}
+
+#loader.loading {
+  background: url(/Images/ajax-loader.gif) no-repeat center center;
+  width:32px;
+  margin:auto ; 
+}
+

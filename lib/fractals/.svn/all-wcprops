@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/fractals/!svn/ver/36/trunk/lib/fractals
+END
+themes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/fractals/!svn/ver/28/trunk/lib/fractals/themes.rb
+END
+algorithms.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/fractals/!svn/ver/28/trunk/lib/fractals/algorithms.rb
+END
+renderers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/fractals/!svn/ver/36/trunk/lib/fractals/renderers.rb
+END
