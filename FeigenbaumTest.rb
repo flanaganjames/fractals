@@ -6,7 +6,7 @@ require 'RMagick'
     # Here I'm creating an animated fractal using RMagick and the RMagickRenderer's
     # to_blob method.  This is both CPU and memory intensive so act accordingly.
     # This is about as complicated as it gets.
-    feigenbaum = Mandelbrot.new(Complex(-0.1528, 1.0397))
+    feigenbaum = Mandelbrot.new(Complex(-0.1560, 1.0397))
     feigenbaum.max_iterations = 100
     feigenbaum.renderer = Renderers::RMagickRenderer
     feigenbaum.width = 150
@@ -23,7 +23,7 @@ require 'RMagick'
         feigenbaum.magnification += (i**2)
     image_list << Magick::Image.from_blob(feigenbaum.to_blob('gif'))[0]
     }
-    image_list.write('feigenbaum.gif')
+    image_list.write('feigenbaum-0.1560, 1.0397.gif')
 
 
 

@@ -1,0 +1,47 @@
+<%
+max = $fractalgifs.size
+
+
+aForm = <<-eos
+<html>
+<head>
+<title>Showing Fractal</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#sam").hover(function(){    $("#sam").attr("src", "feigenbaum.gif");  },
+  function() {  }
+  );});
+</script>
+</head>
+
+<body>
+eos
+
+$fractalgifs.each_index {|i|
+  aForm = aForm + "<img id=\"sam#{i}\" src=\"/feigenbaums/" + $fractalgifs[i] + "\"> </img>"
+  }
+
+aForm = aForm + "<script>"
+
+$fractalgifs.each_index {|i|
+aForm = aForm + <<-eos
+
+setInterval(function()
+{
+$("#sam#{i}").attr("src", "/feigenbaums/#{$fractalgifs[i]}");
+}, #{rand(10)} * 1000 + 500)
+eos
+}
+
+aForm = aForm + <<-eos
+</script>
+</body>
+</html>
+eos
+
+return aForm
+%>
+
