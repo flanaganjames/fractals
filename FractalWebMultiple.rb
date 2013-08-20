@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'daemons'
-require 'fractals'
-require 'RMagick'
+
 
 
 get '/' do
